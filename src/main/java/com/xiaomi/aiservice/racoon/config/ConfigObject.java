@@ -1,18 +1,21 @@
 package com.xiaomi.aiservice.racoon.config;
 
-import com.google.gson.JsonArray;
-
 import java.io.Serializable;
+import java.util.List;
+
+/**
+ * @author wanglingda@xiaomi.com
+ */
 
 public class ConfigObject implements Serializable {
 
-	private JsonArray corrections;
+	private List<CorrectionObject> corrections;
 
-	public JsonArray getCorrections() {
+	public List<CorrectionObject> getCorrections() {
 		return corrections;
 	}
 
-	public void setCorrections(JsonArray corrections) {
+	public void setCorrections(List<CorrectionObject> corrections) {
 		this.corrections = corrections;
 	}
 }
