@@ -18,6 +18,7 @@ public class Racoon {
 	private final RacoonCore racoonCore;
 
 	public static void init(ZkRacoonLoader loader) {
+		LOGGER.info("init racoon path:{}", loader.getZkPath());
 		if (instance == null) {
 			synchronized(Racoon.class) {
 				if (instance == null) {
