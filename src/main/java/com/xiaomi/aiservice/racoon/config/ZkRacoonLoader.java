@@ -31,7 +31,7 @@ public class ZkRacoonLoader {
     this.client.writeData(this.getZkPath(), config, -1);
   }
 
-  public void watch(final Function<String, ?> callback) {
+  public void watch(Function<String, ?> callback) {
     this.client.registerDataChanges(String.class, this.getZkPath(), (path, data) -> callback.apply(data));
   }
 }

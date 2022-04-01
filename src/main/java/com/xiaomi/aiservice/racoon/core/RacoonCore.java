@@ -1,6 +1,5 @@
 package com.xiaomi.aiservice.racoon.core;
 
-import com.google.common.base.Function;
 import com.google.common.base.Throwables;
 import com.xiaomi.aiservice.racoon.config.ConfigObject;
 import com.xiaomi.aiservice.racoon.config.CorrectionObject;
@@ -56,7 +55,7 @@ public class RacoonCore {
 	public RacoonCore(ZkRacoonLoader loader) throws InvalidConfigException {
 		String config = loader.load();
 		initCore(config);
-		loader.watch((Function<String, Object>) newConf -> {
+		loader.watch(newConf -> {
 			try {
 				initCore(newConf);
 				LOGGER.info("update racoon core successfully {}", newConf);
