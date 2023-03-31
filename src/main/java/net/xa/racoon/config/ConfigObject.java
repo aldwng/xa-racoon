@@ -1,10 +1,10 @@
-package com.xiaomi.aiservice.racoon.config;
+package net.xa.racoon.config;
 
 import java.io.Serializable;
 import java.util.List;
 
 /**
- * @author wanglingda@xiaomi.com
+ * @author aldywang
  */
 
 public class ConfigObject implements Serializable {

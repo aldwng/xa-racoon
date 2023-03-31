@@ -1,15 +1,15 @@
-package com.xiaomi.aiservice.racoon;
+package net.xa.racoon;
 
 import com.google.common.base.Throwables;
-import com.xiaomi.aiservice.racoon.config.ConfigObject;
-import com.xiaomi.aiservice.racoon.config.ZkRacoonLoader;
-import com.xiaomi.aiservice.racoon.core.RacoonCore;
+import net.xa.racoon.config.ConfigObject;
+import net.xa.racoon.config.ZkRacoonLoader;
+import net.xa.racoon.core.RacoonCore;
 import kafka.common.InvalidConfigException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author wanglingda@xiaomi.com
+ * @author aldywang
  */
 
 public class Racoon {

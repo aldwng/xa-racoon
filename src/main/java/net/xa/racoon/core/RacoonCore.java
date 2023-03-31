@@ -1,10 +1,10 @@
-package com.xiaomi.aiservice.racoon.core;
+package net.xa.racoon.core;
 
 import com.google.common.base.Throwables;
-import com.xiaomi.aiservice.racoon.config.ConfigObject;
-import com.xiaomi.aiservice.racoon.config.CorrectionObject;
-import com.xiaomi.aiservice.racoon.config.ZkRacoonLoader;
 import kafka.common.InvalidConfigException;
+import net.xa.racoon.config.ConfigObject;
+import net.xa.racoon.config.CorrectionObject;
+import net.xa.racoon.config.ZkRacoonLoader;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -14,11 +14,11 @@ import org.slf4j.LoggerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.xiaomi.aiservice.utils.GsonUtils.getAsJson;
-import static com.xiaomi.aiservice.utils.GsonUtils.getTObject;
+import static net.xa.racoon.config.RacoonGson.getAsJson;
+import static net.xa.racoon.config.RacoonGson.getTObject;
 
 /**
- * @author wanglingda@xiaomi.com
+ * @author aldywang
  */
 
 public class RacoonCore {

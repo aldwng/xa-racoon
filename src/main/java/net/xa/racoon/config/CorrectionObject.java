@@ -1,9 +1,9 @@
-package com.xiaomi.aiservice.racoon.config;
+package net.xa.racoon.config;
 
 import java.io.Serializable;
 
 /**
- * @author wanglingda@xiaomi.com
+ * @author aldywang
  */
 
 public class CorrectionObject implements Serializable {
