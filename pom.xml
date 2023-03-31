@@ -63,16 +63,4 @@
             </plugin>
         </plugins>
     </build>
-    <distributionManagement>
-        <repository>
-            <id>central</id>
-            <name>artifactory-releases</name>
-            <url>https://pkgs.d.xiaomi.net/artifactory/maven-release-virtual</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>artifactory-snapshots</name>
-            <url>https://pkgs.d.xiaomi.net/artifactory/maven-snapshot-virtual</url>
-        </snapshotRepository>
-    </distributionManagement>
 </project>
